@@ -1,0 +1,11 @@
+clc;
+deff('yprime=f(x,y)','yprime=2-2*y-%e^(x+y)');
+x0 = input('enter initial value x0: ');
+y0 = input('enter initial value y0: ');
+h = input('enter step size h: ');
+xn = input ('final final value xn :');
+x = x0:h:xn;
+y = ode(y0,x0,x,f);
+disp(x,'x value : ');
+disp(y,'value of y: ');
+plot(x,y);
